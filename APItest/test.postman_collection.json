@@ -1,0 +1,73 @@
+{
+  "info": {
+    "_postman_id": "908d85b1-231f-4abf-a7e9-2264fb6d0ba1",
+    "name": "test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "28992414"
+  },
+  "item": [
+    {
+      "name": "All Images",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://localhost:7257/api/Image"
+      },
+      "response": []
+    },
+    {
+      "name": "GetImageById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://localhost:7257/api/Image/get-url/16"
+      },
+      "response": []
+    },
+    {
+      "name": "AddImage",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Path\" : \"https://i0.wp.com/www.flutterbeads.com/wp-content/uploads/2022/01/add-image-in-flutter-hero.png\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://localhost:7257/api/Image/upload-by-url"
+      },
+      "response": []
+    },
+    {
+      "name": "RemoveImage",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://localhost:7257/api/Image/remove/15"
+      },
+      "response": []
+    },
+    {
+      "name": "CutImage100x100",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://localhost:7257/api/Image/get-url/18/size/100"
+      },
+      "response": []
+    },
+    {
+      "name": "CutImage300x300",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://localhost:7257/api/Image/get-url/18/size/300"
+      },
+      "response": []
+    }
+  ]
+}
